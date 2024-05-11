@@ -3270,6 +3270,11 @@ public function addShaderToCamera(cam:String,effect:ShaderEffect){//STOLE FROM A
 				dunceNote.spawned=true;
 				callOnLuas('onSpawnNote', [notes.members.indexOf(dunceNote), dunceNote.noteData, dunceNote.noteType, dunceNote.isSustainNote]);
 
+				for (i in shaderUpdates){
+
+			i(elapsed);
+
+				}
 				var index:Int = unspawnNotes.indexOf(dunceNote);
 				unspawnNotes.splice(index, 1);
 			}
