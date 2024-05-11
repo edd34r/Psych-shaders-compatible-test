@@ -1,4 +1,4 @@
-package;
+#########package;
 
 import flixel.graphics.FlxGraphic;
 #if desktop
@@ -192,6 +192,11 @@ class PlayState extends MusicBeatState
 
 	private var healthBarBG:AttachedSprite;
 	public var healthBar:FlxBar;
+	chartingMode:Bool = false;!):
+        public var shaderUpdates:Array<Float->Void> = [];
+        public var camGameShaders:Array<ShaderEffect> = [];
+        public var camHUDShaders:Array<ShaderEffect> = [];
+        public var camOtherShaders:Array<ShaderEffect> = [];
 	var songPercent:Float = 0;
 
 	private var timeBarBG:AttachedSprite;
